@@ -1,34 +1,32 @@
-<style>
-  body {
-    margin: 0;
-    padding: 10px 10px 0 10px;
-    font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Segoe UI", sans-serif;
-    background: transparent;
-  }
-  
-  /* 박스와 선이 완전히 붙도록 연결하는 밑줄 */
-  .container {
-    width: 100%;
-    border-bottom: 2.5px solid #2B3542; /* 선 두께 및 색상 */
-    display: flex;
-    align-items: flex-end;
-  }
-
-  /* 세계관 박스 (저채도·저명도 딥 네이비 톤) */
-  .world-tab {
-    background-color: #2B3542; /* 박스 배경색 */
-    color: #FFFFFF;            /* 흰색 글자 */
-    padding: 6px 14px;
-    border-radius: 4px 4px 0 0; /* 윗부분만 둥글게 처리해 선과 완벽 밀착 */
-    font-size: 13px;
-    font-weight: bold;
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    user-select: none;
-  }
-</style>
-
-<div class="container">
-  <div class="world-tab">🌐 세계관</div>
-</div>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { padding: 8px 10px 0 10px; background: transparent; font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", sans-serif; }
+    .tab-container {
+      width: 100%;
+      border-bottom: 2.5px solid #3A4B5C;
+      display: flex;
+      align-items: flex-end;
+    }
+    .world-tab {
+      background-color: #3A4B5C;
+      color: #FFFFFF;
+      padding: 11px 26px;   /* 기존 6px 14px → 크기 업 */
+      border-radius: 5px 5px 0 0;
+      font-size: 13px;
+      font-weight: bold;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+  </style>
+</head>
+<body>
+  <div class="tab-container">
+    <div class="world-tab">🌐 세계관</div>
+  </div>
+</body>
+</html>
